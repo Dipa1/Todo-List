@@ -1,0 +1,120 @@
+
+#container{
+    width: 360px;
+    margin: 100px auto;
+    background-color: #ecf3f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+body{
+    background: #CC95C0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+input{
+    font-size: 18px;
+    background-color: #ecf3f7;
+    width: 100%;
+    padding: 10px 10px 13px 20px;
+    color: #2980b9;
+    box-sizing: border-box;
+    border-left: none;
+    border-right: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+input:focus{
+    border: 2px solid steelblue;
+    background-color: #ecf3f7;
+    outline: none;
+}
+
+h2{
+    background-color: steelblue;
+    color: white;
+    font-family: fantasy;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 24px;;
+}
+
+.fa-plus-circle{
+    float: right;
+    margin-top: 3px;
+}
+.completed{
+    color:red;
+    text-decoration: line-through;
+}
+
+.delete{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+ul{
+    color: black;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li:hover{
+    cursor: pointer;
+}
+li{
+    background-color: white;
+    padding: 10px;
+    overflow-wrap: break-word;
+    height:auto;
+    line-height: 30px;
+    text-align: justify;
+   
+    text-transform: capitalize;
+    font-size: 16px;
+}
+li:nth-child(2n){
+    background-color: #ecf3f7;
+}
+.dlt{
+    background-color: #ee7744;
+    height: 30px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    transition: width .5s;
+    width: 0;
+    opacity: 0;
+}
+.edit
+{
+    height: 0;
+    margin-right: 5px;
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block !important;
+    background-color: steelblue;
+    transition: width .5s;
+    width: 0;
+    opacity: 0;
+    align-content: center;
+}
+
+li:hover .dlt{
+    width: 40px;
+    opacity: 1;
+}
+
+
+li:hover .edit{
+    width: 40px;
+    opacity: 1;
+    margin-top:5px;
+    height: 32px;
+}
